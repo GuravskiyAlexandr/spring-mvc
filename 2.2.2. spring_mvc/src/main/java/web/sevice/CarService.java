@@ -2,9 +2,9 @@ package web.sevice;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import web.model.Cars;
-import web.model.Car;
 
+import web.model.Car;
+import web.util.Cars;
 import java.util.List;
 import java.util.stream.Collectors;
 
