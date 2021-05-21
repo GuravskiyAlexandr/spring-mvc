@@ -1,4 +1,4 @@
-package web.garage;
+package web.model;
 
 import org.springframework.stereotype.Component;
 import web.model.Car;

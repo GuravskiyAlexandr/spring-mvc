@@ -2,7 +2,7 @@ package web.sevice;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import web.garage.Cars;
+import web.model.Cars;
 import web.model.Car;
 
 import java.util.List;
