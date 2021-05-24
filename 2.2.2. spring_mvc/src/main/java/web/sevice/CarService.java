@@ -13,10 +13,6 @@ public class CarService {
     @Autowired
     Cars cars;
 
-    public List<Car> getAllCars() {
-        return cars.getCars();
-    }
-
     public Object getListCars(Integer count) {
         return cars.getCars().stream().limit(count).collect(Collectors.toList());
     }

@@ -16,12 +16,6 @@ public class CarController {
     CarService carService;
 
 
-    @GetMapping(value = "/{count}")
-    public String printCar1(ModelMap model, @PathVariable Integer count) {
-        model.addAttribute("cars", carService.getListCars(count));
-        return "cars";
-    }
-
     @GetMapping
     public String printAllCar(ModelMap model, @RequestParam Map<String, String> reqPar) {
         Integer count = Integer.parseInt(reqPar.get("count") == null ? "5" : reqPar.get("count"));
